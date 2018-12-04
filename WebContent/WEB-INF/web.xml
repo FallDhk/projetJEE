@@ -9,4 +9,20 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <servlet-name>Administrateur</servlet-name>
+    <servlet-class>ecole.Administrateur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Administrateur</servlet-name>
+    <url-pattern>/administrateur</url-pattern>
+  </servlet-mapping>
+  <filter>
+  	<filter-name>ftConnexion</filter-name>
+  	<filter-class>ecole.FtConnexion</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>ftConnexion</filter-name>
+  	<url-pattern>/administrateur</url-pattern>
+  </filter-mapping>
 </web-app>
